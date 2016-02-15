@@ -3,14 +3,14 @@
   <head>
     <title>ng-book 2: Angular 2 Router</title>
 
-    
-      <link href="/styles.css" rel="stylesheet">
-    
+    {% for (var css in o.htmlWebpackPlugin.files.css) { %}
+      <link href="{%=o.htmlWebpackPlugin.files.css[css] %}" rel="stylesheet">
+    {% } %}
   </head>
   <body class="container-fullwidth">
     <div class="page-header">
       <div class="container">
-        <h1>Sportify <small>music for Wilfred that ready production</small></h1>
+        <h1>Sportify <small>music for REST</small></h1>
       </div>
     </div>
 
