@@ -10,6 +10,8 @@ import {
   RouteParams,
 } from 'angular2/router';
 
+import {AddRestSQLComponent} from 'components/AddRestSQLComponent';
+import {RestSQLComponent} from 'components/RestSQLComponent';
 /*
  * Services
  */
@@ -17,7 +19,7 @@ import {SpotifyService} from 'services/SpotifyService';
 
 @Component({
   selector: 'search',
-  directives: [RouterLink, CORE_DIRECTIVES],
+  directives: [RestSQLComponent, AddRestSQLComponent, RouterLink, CORE_DIRECTIVES],
   template: `
   <h1>Search</h1>
 
@@ -67,6 +69,8 @@ import {SpotifyService} from 'services/SpotifyService';
       </div>
     </div>
   </div>
+  <addsql></addsql>
+  <restsql></restsql>
   `
 })
 export class SearchComponent implements OnInit {
