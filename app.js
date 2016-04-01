@@ -142,7 +142,7 @@ webpackJsonp([0],{
 	var AddRestSQLComponent = (function () {
 	    function AddRestSQLComponent(http) {
 	        this.http = http;
-	        this.url = 'http://172.16.0.18:30089/AddItem?id=';
+	        this.url = 'http://66.220.10.115:30089/AddItem?id=';
 	    }
 	    AddRestSQLComponent.prototype.makeRequest = function (userID, itemName) {
 	        var _this = this;
@@ -185,7 +185,7 @@ webpackJsonp([0],{
 	var RestSQLComponent = (function () {
 	    function RestSQLComponent(http) {
 	        this.http = http;
-	        this.url = 'http://172.16.0.18:30089/GetAllItems?id=';
+	        this.url = 'http://66.220.10.115:30089/GetAllItems?id=';
 	    }
 	    RestSQLComponent.prototype.makeRequest = function (query) {
 	        var _this = this;
