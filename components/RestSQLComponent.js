@@ -12,7 +12,7 @@ var http_1 = require('angular2/http');
 var RestSQLComponent = (function () {
     function RestSQLComponent(http) {
         this.http = http;
-        this.url = 'http://66.220.10.155:30089/GetAllItems?id=';
+        this.url = 'http://66.220.10.115:30089/GetAllItems?id=';
     }
     RestSQLComponent.prototype.makeRequest = function (query) {
         var _this = this;
