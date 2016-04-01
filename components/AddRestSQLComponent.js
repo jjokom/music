@@ -12,7 +12,7 @@ var http_1 = require('angular2/http');
 var AddRestSQLComponent = (function () {
     function AddRestSQLComponent(http) {
         this.http = http;
-        this.url = 'http://172.16.0.18:30089/AddItem?id=';
+        this.url = 'http://66.220.10.115:30089/AddItem?id=';
     }
     AddRestSQLComponent.prototype.makeRequest = function (userID, itemName) {
         var _this = this;
